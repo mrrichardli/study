@@ -1,0 +1,22 @@
+package com.ingphone.hellofragment;
+
+import com.example.hellofragment.R;
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+public class FragmentOne extends Fragment {
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstance) {
+		return inflater.inflate(R.layout.activity_fragment_two, container, false);
+	}
+	
+	public void changeText(String newText) {
+		TextView textView = (TextView)getActivity().findViewById(R.id.text);
+		textView.setText(newText);
+	}
+}
