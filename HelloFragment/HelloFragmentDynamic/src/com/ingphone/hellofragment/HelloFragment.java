@@ -24,6 +24,8 @@ public class HelloFragment extends FragmentActivity {
 			getSupportFragmentManager().beginTransaction().replace(R.id.main_layout, fragmentOne).commit();
 		}else {
 			FragmentTwo fragmentTwo = new FragmentTwo();
+			//v4:getSupportFragmentManager
+			//not v4:getFragmentManager
 			getSupportFragmentManager().beginTransaction().replace(R.id.main_layout, fragmentTwo).commit();
 		}
 	}
