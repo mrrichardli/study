@@ -19,17 +19,16 @@ public class HelloGesture extends Activity implements OnGestureListener, OnDoubl
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_hello_gesture);
-		
 		mGestureDetector = new GestureDetectorCompat(this, this);
 		mGestureDetector.setOnDoubleTapListener(this);
-		
-		findViewById(android.R.id.content).setOnTouchListener(new OnTouchListener(){
-
-			@Override
-			public boolean onTouch(View arg0, MotionEvent event) {
-				return mGestureDetector.onTouchEvent(event);
-			}});
 	}
+	
+    @Override 
+    public boolean onTouchEvent(MotionEvent event){ 
+        this.mGestureDetector.onTouchEvent(event);
+        // Be sure to call the superclass implementation
+        return super.onTouchEvent(event);
+    }
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
