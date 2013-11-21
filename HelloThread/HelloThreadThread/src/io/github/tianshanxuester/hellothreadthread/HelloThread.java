@@ -18,12 +18,6 @@ public class HelloThread extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_hello_thread);
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.hello_thread, menu);
 		
 		Button startThreadButton = (Button)findViewById(R.id.startThread);
 		startThreadButton.setOnClickListener(startThread);
@@ -54,7 +48,12 @@ public class HelloThread extends Activity {
 			}
 			
 		};
-		
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.hello_thread, menu);
 		return true;
 	}
 
