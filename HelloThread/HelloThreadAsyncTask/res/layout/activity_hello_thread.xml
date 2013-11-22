@@ -2,17 +2,26 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
-    
+
     <Button
         android:id="@+id/startThread"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Start Thread" />
-    
-        <Button
+
+    <Button
         android:id="@+id/stopThread"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Stop Thread" />
+
+    <TextView
+        android:id="@+id/valueOfI"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="#F00"
+        android:textSize="32dp" />
 
 </LinearLayout>
