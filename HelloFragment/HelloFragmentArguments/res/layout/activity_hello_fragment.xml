@@ -10,8 +10,9 @@
         android:name="com.ingphone.hellofragment.FragmentOne"
         android:layout_width="0dp"
         android:layout_height="match_parent"
+        android:layout_weight="1"
         app:extraInformation="custom attr ok"
-        android:layout_weight="1" />
+        tools:ignore="MissingPrefix" />
 
     <fragment
         android:id="@+id/fragmentTwo"
