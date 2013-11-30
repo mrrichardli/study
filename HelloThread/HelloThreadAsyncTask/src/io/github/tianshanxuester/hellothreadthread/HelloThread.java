@@ -63,7 +63,11 @@ public class HelloThread extends Activity {
 			int i = 0;
 			while (true) {
 				i++;
+				if (i > 10) {
+					break;
+				}
 				Log.i("HelloThread", "i is " + i);
+				publishProgress(i);
 				try {
 					Thread.sleep(3000);
 				} catch (InterruptedException e) {
