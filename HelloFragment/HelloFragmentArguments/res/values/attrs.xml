@@ -2,5 +2,6 @@
 <resources>
     <declare-styleable name="FragmentOne">          
         <attr name="extraInformation" format="string" />
+        <attr name="fraction" format="fraction" />
     </declare-styleable>
 </resources>

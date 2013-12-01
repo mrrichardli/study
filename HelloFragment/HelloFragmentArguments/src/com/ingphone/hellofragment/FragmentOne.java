@@ -35,6 +35,9 @@ public class FragmentOne extends Fragment {
 			Log.e("HelloFragmentArguments",
 					"My String Received : " + myString.toString());
 		}
+		
+		float mFraction = a.getFraction(R.styleable.FragmentOne_fraction, 1, 1, 0);
+		Log.e("HelloFragmentArguments", "fraction is " + mFraction);
 
 		a.recycle();
 	}
