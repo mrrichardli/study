@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FragmentOne">
+        <attr name="stringReferenceValue" format="reference" />
+        <attr name="colorReferenceValue" format="reference|color" />
+        <attr name="drawableReferenceValue" format="reference" />
+        <attr name="referenceValue" format="reference" />          
+        <attr name="stringValue" format="string" />
+        <attr name="colorValue" format="color" />
+        <attr name="dimensionValue" format="dimension" />
+        <attr name="booleanValue" format="boolean" />
+        <attr name="integerValue" format="integer" />
+        <attr name="floatValue" format="float" />
+        <attr name="fractionValue" format="fraction" />
+        <attr name="enumValue">
+            <enum name="vertical" value="0" />
+            <enum name="horizontal" value="1" />
+        </attr>
+        <attr name="flagValue">
+            <flag name="none" value="0x0" />
+            <flag name="bold" value="0x1" />
+            <flag name="italic" value="0x2" />
+            <flag name="all" value="0x3" />
+        </attr>
+    </declare-styleable>
+</resources>
