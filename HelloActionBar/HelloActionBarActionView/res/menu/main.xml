@@ -2,6 +2,12 @@
     xmlns:helloactionbardone="http://schemas.android.com/apk/res-auto" >
 
     <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/abc_ic_search"
+        android:title="Search"
+        helloactionbardone:actionViewClass="android.support.v7.widget.SearchView"
+        helloactionbardone:showAsAction="ifRoom|collapseActionView"/>
+    <item
         android:icon="@drawable/abc_ic_menu_moreoverflow_normal_holo_light"
         android:title=""
         helloactionbardone:showAsAction="ifRoom">
