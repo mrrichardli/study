@@ -74,6 +74,12 @@ public class HelloNavgiationDrawer extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+	
+	@Override
+	protected void onPostCreate(Bundle savedInstanceState) {
+	    super.onPostCreate(savedInstanceState);
+	    mDrawerToggle.syncState();
+	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
